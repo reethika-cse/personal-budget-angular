@@ -40,7 +40,7 @@
             <li><a href="/login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
         </ul>
-    </div>
+    </nav>
 
     <header>
         <h1>Personal Budget</h1>
@@ -136,7 +136,8 @@
         }
 
         function getBudget() {
-            axios.get('http://localhost:3000/budget')
+            axios.get('/budget')
+            // axios.get('http://localhost:3000/budget')
                 .then(function (res) {
                     for (var i = 0; i < res.data.myBudget.length; i++) {
                         dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
