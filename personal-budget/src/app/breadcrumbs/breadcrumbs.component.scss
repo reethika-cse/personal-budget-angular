@@ -1,7 +1,8 @@
-p{
-  float : left;
-  font-size: 12px;
+p {
+  font-weight: bold;
   color: black;
-  font-family: 'Roboto', sans-serif;
-
+  font-size: 18px; /* Increased font size */
+  background-color: none; /* No background */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
 }

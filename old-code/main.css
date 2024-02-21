@@ -1,129 +1,123 @@
-/* Style the header */
-header {
-    text-align: center; /* Center-align text within the header */
-    padding: 20px 0;
+* {
+    box-sizing: border-box;
 }
-
-header h1 {
-    font-size: 2.2em;
-    color: #4d5791;
-    margin-bottom: 10px;
+.skip-to-content-link {
+    background: #e77e23;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
 }
-
-header h2 {
-    font-size: 1.6em;
-    color: #4d5791;
-}
-
-/* Reset some default styles */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Apply a background color and font styles to the body */
 body {
-    font-family: Tahoma, Arial, sans-serif;
-    background-color: #b4c6f0;
+    font-size: 10px;
+    font-family: Tahoma, Arial;
 }
 
-/* Style the navigation menu */
 nav {
+    width: 100%;
     background-color: #4d5791;
-    padding: 10px 0;
-    text-align: center;
+    height: 44px;
+    padding: 0 40px;
 }
 
-nav ul {
+.menu ul,
+.menu ul li {
+    margin: 0;
+    padding: 0 ;
     list-style: none;
+    display: inline-block;
 }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
+.menu ul li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 44px;
+    font-size: 1.4em;
     text-decoration: none;
     color: #fff;
-    font-size: 1.2em;
+    margin: 0;
 }
 
-/* Style the hero section */
-div.hero {
-    background-color: #b4c6f0;
-    /*background-image: url('bg.png');*/
-    background-size: 450px;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    padding: 40px 0;
-    text-align: center;
-}
-
-div.hero h1 {
-    font-size: 4.2em;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-div.hero h2 {
-    font-size: 1.6em;
+.menu ul li a:hover  {
+    background-color: white;
     color: #4d5791;
 }
 
-/* Style the main content */
-#main-content {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.hero {
+    height: 350px;
+    background-color: #b4c6f0;
+    background-image: url('/bg.png');
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 40px;
 }
 
-.text-box {
+.header {
+    height: 50px;
+    background-color: #b4c6f0;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.header h2 {
+    font-size: 4.2em;
+    color: #4d5791;
+}
+
+.hero h1,
+.hero h2 {
+    text-align: center;
+    margin: 0;
+    color: #4d5791;
+    
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 4.2em;
     margin-bottom: 20px;
 }
 
-.text-box h1 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 10px;
+.hero h2 {
+    color: #4d5791;
 }
 
-.text-box p {
-    font-size: 1.2em;
-    color: #666;
-    line-height: 1.5;
+.container {
+    padding: 40px;
+    width: 100%;
 }
 
-/* Style the footer */
+.page-area {
+    max-width: 768px;
+    display: inline-block;
+}
+
 footer {
+    height: 50px;
     background-color: #b4c6f0;
-    text-align: center;
-    padding: 20px 0;
+    padding: 40px;
 }
 
 .center {
     text-align: center;
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    nav {
-        padding: 10px;
-        text-align: left;
-    }
+.text-box {
+    display: inline-block;
+    width: 100%;
+    max-width: 340px;
+    text-align: justify;
+    margin: 20px;
+}
 
-    nav ul {
-        text-align: center;
-        display: block;
-    }
-
-    nav li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    nav a {
-        font-size: 1.4em;
+@media screen and (min-width: 768px) {
+    .container .div.text-box {
+        margin: 10px;
     }
 }
